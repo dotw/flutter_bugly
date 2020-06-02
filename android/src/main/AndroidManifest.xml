@@ -8,11 +8,13 @@
         tools:targetApi="m">
 
         <provider
+            tools:replace="android:authorities
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
+                tools:replace="android:resource                           
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
